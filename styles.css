@@ -1,19 +1,16 @@
 * {
-  font-family: Verdana;
-  color: black;
+  font-family: Helvetica, sans-serif
 }
 
 body {
   height: 100vh;
   width: 100%;
   background-size: auto;
-  background-color: #967C9D;
   box-sizing: border-box;
   margin: 0;
 }
 
 main {
-  border: 1px solid black;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -22,19 +19,32 @@ main {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
+  margin-bottom: -27px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 90px;
+  letter-spacing: 8px;
+  text-shadow: .1em .1em 0 #698362;
+  font-family: 'Zombie', sans-serif;
+  margin-top: 50px;
 }
 
 
-p {
+/* h3 {
   font-size: 20px;
+  letter-spacing: 2px;
   text-align: center;
-  margin-top: 10px;
-}
+  margin-top: 85px;
+  align-items: center;
+} */
 
 .main-panel {
   display: flex;
+  background-color: #967C9D;
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100%;
@@ -43,113 +53,125 @@ p {
   width: 100%;
 }
 
-.buttons {
+.game-panel {
+  align-items: normal;
+  align-content: center;
   height: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 197px;
+  margin-top: 23px;
 }
 
-.left-container {
-  align-content: center;
+.classic-game {
   align-items: center;
-  border: 1px solid black;
-  background-color: #69566d;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-content: flex start;
-  width: 25%;
+  background-color: #698362;
+  box-shadow: 6px 3px 3px black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: lighter;
   text-align: center;
+  height: 228px;
+  margin-right: 50px;
+  width: 183px;
 }
 
-.game-container {
-  align-content: center;
-  align-items: flex-end;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-bottom: 50px;
+.difficult {
+  align-items: center;
+  background-color: #698362;
+  box-shadow: 6px 3px 3px black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  font-weight: lighter;
+  height: 228px;
+  margin-right: 50px;
+  width: 183px;
 }
 
-.right-container {
+.difficult:hover { background-color: #B7C5B4;
+}
+
+.classic-game:hover {background-color: #B7C5B4;
+}
+
+.left-container, .right-container {
   align-content: center;
   align-items: center;
   background-color: #69566d;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100%;
   justify-content: flex start;
-  width: 25%;
+  width: 35%;
   text-align: center;
 }
 
 .human-score-counter {
   align-items: center;
+  font-size: 20px;
 }
 
-.change-game {
+.zombie-score-counter {
+  align-items: center;
+  font-size: 20px;
+}
+
+.change-game-button {
   border: none;
   border-radius: 5px;
-  margin-top: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 137px;
   width: 145px;
   height: 60px;
 }
 
-.reset-game {
-  border: none;
-  border-radius: 5px;
-  margin-top: 200px;
-  width: 145px;
-  height: 60px;
+.change-game-button:hover {background-color: #B7C5B4;
 }
 
-.zombie-image {
-  width: 104px;
-  height: 105px;
+.reset-game-button {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 60px;
+  margin-top: 159px;
+  width: 145px;
+}
+
+.reset-game-button:hover {background-color: #B7C5B4;
+}
+
+.human-image {
+  width: 110px;
+  height: 126px;
   margin-bottom: 10px;
   margin-top: 57px;
 }
 
-.computer-image {
+.zombie-image {
   width: 155px;
   height: 138px;
   margin-top: 57px;
 }
 
-.human {
+.fighter-icon {
+  width: 155px;
+  height: 138px;
+
+
+}
+
+.human, .computer {
   font-weight: bold;
   font-size: 30px;
 }
 
-.human-score-counter {
-  font-size: 20px;
-}
-
-.computer {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.classic {
-  border: none;
-  border-radius: 5px;
-  height: 195px;
-  margin-right: 50px;
-  width: 155px;
-}
-
-.difficult {
-  border: none;
-  border-radius: 5px;
-  height: 195px;
-  margin-right: 50px;
-  width: 155px;
-}
 
 .hidden {
   display: none;

@@ -1,5 +1,5 @@
 class Game {}
 
-var player1 = new Game();
+var humanPlayer = new Player();
 
-var player2 = new Game();
+var computerPlayer = new Player();
