@@ -21,8 +21,4 @@ class Player {
   generateComputerIcon(array) {
     return Math.floor(Math.random() * array.length)
   }
-
-  // winCounter() {
-  //   this.wins++
-  // }
 }
