@@ -98,7 +98,20 @@ h2 {
 .classic-game:hover {background-color: #B7C5B4;
 }
 
-.left-container, .right-container {
+.left-container {
+  align-content: center;
+  align-items: center;
+  background-color: #69566d;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex start;
+  width: 35%;
+  text-align: center;
+}
+
+.right-container {
   align-content: center;
   align-items: center;
   background-color: #69566d;
@@ -163,13 +176,21 @@ h2 {
 .fighter-icon {
   width: 155px;
   height: 138px;
-
-
 }
 
 .human, .computer {
   font-weight: bold;
   font-size: 30px;
+}
+
+.choose-battle, .choose-fighter {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.human-wins, .computer-wins {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 

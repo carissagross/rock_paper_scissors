@@ -3,26 +3,32 @@ class Player {
     this.name = name;
     this.token = token;
     this.wins = wins;
+    this.currentChoice = ''
   }
 
-  takeTurn() {
-
+// takeTurn(event) {
+//   console.log('hi')
+  takeTurn(event) {
+    this.currentChoice = event.target.id
   }
+  // if (event.target.id === 'zombie-rock') {
+  //   return 'zombie-rock'
+  // } else if (event.target.id === 'knife') {
+  //   return 'knife'
+  // } else {
+  //   return 'paper'
+  //   }
 
-  chooseBattle() {
-
+setComputerChoice() {
+  if (game.gameType === 'Classic') {
+    game.computerPlayer.currentChoice = classicFighters[this.generateComputerIcon(classicFighters)]
+  } else {
+    game.computerPlayer.currentChoice = difficultFighters[this.generateComputerIcon(classicFighters)]
   }
 }
+  generateComputerIcon() {
+  this.computerPlayer.currentChoice = this.fighters[Math.floor(Math.random() * this.fighters.length)]
+  return this.computerPlayer.currentChoice;
+  }
 
-
-var humanPlayer = new Player();
-
-var computerPlayer = new Player();
-
-
-// the player will also choose their token
-// the player can RESET the Game
-// the player can CHANGE the Game
-
-
-// The computer player should be an instantiation of Player and have the ability to make a random choice.
+}
