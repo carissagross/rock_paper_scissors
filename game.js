@@ -22,7 +22,7 @@ class Game {
       (this.humanPlayer.currentChoice === 'paper') && (this.computerPlayer.currentChoice === 'zombie-rock' || this.computerPlayer.currentChoice === 'two-zombies') ||
       (this.humanPlayer.currentChoice === 'knife') && (this.computerPlayer.currentChoice === 'paper' || this.computerPlayer.currentChoice === 'two-zombies') ||
       (this.humanPlayer.currentChoice === 'chainsaw') && (this.computerPlayer.currentChoice === 'two-zombies' || this.computerPlayer.currentChoice === 'paper') ||
-      (this.humanPlayer.currentChoice === 'two-zombies') && (this.computerPlayer.currentChoice === 'knife' || this.computerPlayer.currentChoice === 'chainsaw')) {
+      (this.humanPlayer.currentChoice === 'two-zombies') && (this.computerPlayer.currentChoice === 'knife' || this.computerPlayer.currentChoice === 'rock')) {
       this.winner = this.humanPlayer
       this.humanPlayer.wins ++
     } else {
