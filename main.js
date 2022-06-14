@@ -24,7 +24,7 @@ classicIcons.addEventListener('click', playGame);
 difficultGame.addEventListener('click', pickDifficultGame);
 difficultIcons.addEventListener('click', playGame);
 
-// 1--- FUNCTIONS ---
+// --- FUNCTIONS ---
 function pickClassicGame() {
 game.gameType = 'Classic'
 classicIcons.classList.remove('hidden');
