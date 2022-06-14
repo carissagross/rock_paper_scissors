@@ -1,0 +1,156 @@
+* {
+  font-family: Verdana;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-size: auto;
+  background-color: #967C9D;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main-panel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 197px;
+}
+
+.left-container {
+  align-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #69566d;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex start;
+  width: 25%;
+  text-align: center;
+}
+
+.game-container {
+  align-content: center;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.right-container {
+  align-content: center;
+  align-items: center;
+  background-color: #69566d;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex start;
+  width: 25%;
+  text-align: center;
+}
+
+.human-score-counter {
+  align-items: center;
+}
+
+.change-game {
+  border: none;
+  border-radius: 5px;
+  margin-top: 200px;
+  width: 145px;
+  height: 60px;
+}
+
+.reset-game {
+  border: none;
+  border-radius: 5px;
+  margin-top: 200px;
+  width: 145px;
+  height: 60px;
+}
+
+.zombie-image {
+  width: 104px;
+  height: 105px;
+  margin-bottom: 10px;
+  margin-top: 57px;
+}
+
+.computer-image {
+  width: 155px;
+  height: 138px;
+  margin-top: 57px;
+}
+
+.human {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.human-score-counter {
+  font-size: 20px;
+}
+
+.computer {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.classic {
+  border: none;
+  border-radius: 5px;
+  height: 195px;
+  margin-right: 50px;
+  width: 155px;
+}
+
+.difficult {
+  border: none;
+  border-radius: 5px;
+  height: 195px;
+  margin-right: 50px;
+  width: 155px;
+}
+
+.hidden {
+  display: none;
+}
