@@ -33,15 +33,6 @@ h2 {
   margin-top: 50px;
 }
 
-
-/* h3 {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-top: 85px;
-  align-items: center;
-} */
-
 .main-panel {
   display: flex;
   background-color: #967C9D;
@@ -74,7 +65,7 @@ h2 {
   text-align: center;
   height: 228px;
   margin-right: 50px;
-  width: 183px;
+  width: 258px;
 }
 
 .difficult {
@@ -89,7 +80,7 @@ h2 {
   font-weight: lighter;
   height: 228px;
   margin-right: 50px;
-  width: 183px;
+  width: 258px;
 }
 
 .difficult:hover { background-color: #B7C5B4;
@@ -174,8 +165,10 @@ h2 {
 }
 
 .fighter-icon {
-  width: 155px;
-  height: 138px;
+  width: 165px;
+  height: 144px;
+  margin-left: -16px;
+  margin-right: 3px;
 }
 
 .human, .computer {
